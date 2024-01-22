@@ -1,5 +1,5 @@
 const request = require("supertest");
-let server = require("../../app");
+let server;
 const { User } = require("../../models/users");
 
 describe("auth.js", () => {
