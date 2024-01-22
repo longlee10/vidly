@@ -17,6 +17,9 @@ require("./startup/db")();
 // validate input
 require("./startup/validation")();
 
+// set production environment
+require("./startup/prod")(app);
+
 // set view
 app.set("view engine", "pug");
 
